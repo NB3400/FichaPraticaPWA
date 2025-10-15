@@ -1,5 +1,7 @@
 1 - O que são operações de “Commit”, “Push” e “Pop” efetuadas num repositório?
 2 – Quais sáo as vantagens de usar Branchs num repositório git?
+Os branches são fundamentais em qualquer repositório GIT, principalmente se for colaborativo, pois evitam que alterações não testadas afetem código estável, 
+vários elementos da mesma equipa podem criar ramificações e testar soluções diferentes ao mesmo tempo e ajuda a gerir versões do produto. 
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
