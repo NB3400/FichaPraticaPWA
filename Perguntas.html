@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Perguntas GIT</title>
+    </head>
+    <body>
+        <div class="content">
+        <ol>
+            <li class="question">
+            O que são operações de <em>“Commit”</em>, <em>“Push”</em> e <em>“Pop”</em> efetuadas num repositório?
+                <ul>
+                    <li class="answer">
+                        A operação "Commit" é responsável por guardar as alterações feitas localmente no repositório do computador. Ao realizar um commit, cria-se um registo do projeto, contendo as modificações feitas até ao momento do commit. É uma boa prática escrever uma mensagem que explique o que foi alterado.
+                    </li>
+                    <li class="answer">
+                        O "Push" serve para enviar esses commits que estão no repositório local para o repositório remoto, como o GitHub. Essa operação torna as alterações disponíveis para todos os membros da equipa e cria um backup online do trabalho.
+                    </li>
+                    <li class="answer">
+                        O "Pop" serve para guardar temporariamente mudanças que ainda não se quer fazer commit. Com o git stash, essas mudanças são guardadas numa área temporária. Depois, com git stash pop, essas alterações são recuperadas para continuar o trabalho, ao mesmo tempo que remove essas mudanças do stash.
+                    </li>
+                </ul>
+            </li>
+
+            <li class="question">
+                Quais são as vantagens de usar Branches num repositório git?
+                <p class="answer">
+                    Os branches são fundamentais em qualquer repositório GIT, principalmente se for colaborativo, pois evitam que alterações não testadas afetem código estável. Vários elementos da mesma equipa podem criar ramificações e testar soluções diferentes ao mesmo tempo, e isso ajuda a gerir versões do produto.
+                </p>
+            </li>
+
+            <li class="question">
+                Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em que consistem e como podem ser resolvidos esses conflitos?
+                <p class="answer">
+                    Ao executar um "git stash pop", o Git tenta aplicar as mudanças temporariamente guardadas (stash) no diretório de trabalho atual. No entanto, se houver outras modificações feitas desde que o stash foi criado, essas mudanças podem entrar em conflito. Esses conflitos de merge acontecem quando o Git não consegue decidir automaticamente qual versão deve prevalecer. Para resolver este problema, deve-se abrir os arquivos com conflitos, revê-los e escolher que alterações manter/combinar. Depois de resolver, usar "git add" e fazer um commit para registar a resolução.
+                </p>
+            </li>
+
+            <li class="question">
+                <u>“Clone”</u> e <u>“Fork”</u> são formas diferentes de replicar um repositório Git. Quais as diferenças entre eles?
+                <p class="answer">
+                    Fazer o "Clone" de um repositório significa criar uma cópia local do projeto existente no computador. Essa cópia está diretamente vinculada ao repositório original, permitindo enviar e receber atualizações. Já o "Fork" cria uma cópia independente do repositório original na tua conta (ex: GitHub). É útil em projetos open source, onde queres contribuir sem afetar o projeto principal.
+                </p>
+            </li>
+        </ol>
+        </div>
+    </body>
+</html>
