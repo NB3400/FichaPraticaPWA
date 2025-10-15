@@ -19,5 +19,9 @@ Esses conflitos de merge acontecem quando o Git não consegue decidir automatica
 Para resolver este problema, deve-se abrir os arquivos que apresentam conflitos, revê-los e escolher que alterações manter/combinar. 
 Depois de resolver os conflitos, usar o "git add" e fazer um commit para registar a resolução das divergências. 
 
-4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
-diferenças entre eles?
+4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as diferenças entre eles?
+Fazer o "Clone" um repositório significa criar uma cópia local do projeto existente no seu computador. Essa cópia está diretamente vinculada ao repositório original, permitindo que receba atualizações (com "pull") do original e envie as alterações (com "push") para o mesmo. 
+É o método mais indicado para quem trabalha dentro de uma equipa de desenvolvimento e contribui diretamente para o projeto principal.
+O "Fork" cria uma cópia independente do repositório original no servidor de hospedagem (como o GitHub) na sua própria conta. Esse fork é um repositório diferente, onde há controlo total para desenvolver de forma isolada, sem afetar o projeto original. 
+O fork é especialmente útil em projetos open source, onde não se tem direito de escrita no repositório principal, e se deseja contribuir mantendo o controlo da sua versão até aprovação.
+Em resumo, "clone" cria uma cópia ligada ao original para colaboração direta, enquanto o "fork" cria uma cópia independente para desenvolvimento paralelo e contribuições apenas por pull requests.
